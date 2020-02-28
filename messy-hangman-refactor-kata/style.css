@@ -53,7 +53,9 @@ button:hover {
   outline: none;
 }
 
-.win .lose {
+
+.win,
+.lose {
   display: none;
 }
 
