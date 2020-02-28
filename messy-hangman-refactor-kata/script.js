@@ -1,15 +1,10 @@
 // Initialize ALL global variables here
 // allTheWords = []
 // This code here selects a random word
-const wordList = [
-  "vis",
-  "toeter",
-  "developer",
-  "telefoon",
-  "moeder",
-  "snoer",
-  "geeuw"
-];
+
+
+// DIT IS EEN TEST!//
+
 let maxAmount = 5;
 
 let word;
