@@ -5,14 +5,29 @@
 
 body {
   text-align: center;
-  background-color: #333;
+  background-color: black;
+}
+
+.header p {
+  font-size: 1.5em;
+  text-decoration: line-through;
+}
+
+.lose p {
+  font-size: 1.5em;
+}
+
+
+h3, h2 {
+  font-size: 2em;
 }
 
 .wrapper {
+  margin-top: 15em;
   display: grid;
   grid-template-columns: 800px;
   grid-template-rows: repeat(4, auto);
-  grid-row-gap: 1em;
+  grid-row-gap: 0.5em;
   justify-content: center;
 }
 
@@ -26,13 +41,14 @@ body {
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 70px;
 }
 
 button { 
   cursor: pointer;
   background: 0;
-  border: 0;
+  border: 2px solid black;
+  padding: 8px 28px;
   font-size: 15pt;
   transition: opacity 200ms ease-in;
   display: inline-flex;
@@ -45,7 +61,9 @@ button:hover {
 }
 
 #guess-input {
+  margin-right: 3em;
   width: 200px;
+  height: 37px;
   font-size: 25px;
   text-align: center;
   border: none;
@@ -53,6 +71,20 @@ button:hover {
   outline: none;
 }
 
+.hangman {
+  margin-top: -33px;
+  width: 30%;
+}
+
+.hangman.vert-move {
+  -webkit-animation: mover 2s infinite  alternate;
+  animation: mover 2s infinite  alternate;
+}
+
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
 
 .win,
 .lose {
@@ -66,3 +98,10 @@ button:hover {
 .lose h2 {
   color: blue;
 }
+
+.loseimg,
+.winimg {
+  width: 100%;
+}
+
+

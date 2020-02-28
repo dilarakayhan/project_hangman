@@ -1,12 +1,4 @@
-const wordList = [
-  "vis",
-  "toeter",
-  "developer",
-  "telefoon",
-  "moeder",
-  "snoer",
-  "geeuw"
-];
+const wordList = ["vis","toeter","developer","telefoon","moeder","snoer","geeuw"];
 
 const wordPicker = () => {
   let index = Math.floor(Math.random() * wordList.length);
@@ -91,8 +83,6 @@ const startGame = () => {
   filterLetters(word, inputs);
 }
 
-
-
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".guess").addEventListener("click", guessLetter);
   document
@@ -100,7 +90,5 @@ document.addEventListener("DOMContentLoaded", () => {
     .addEventListener("click", startGame);
   startGame();
 });
-
-
 
 module.exports = wordPicker;
