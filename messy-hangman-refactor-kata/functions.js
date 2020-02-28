@@ -8,9 +8,9 @@ const wordList = [
   "geeuw"
 ];
 
-const wordPicker = list => {
-  let index = Math.floor(Math.random() * list.length);
-  return list[index];
+const wordPicker = () => {
+  let index = Math.floor(Math.random() * wordList.length);
+  return wordList[index];
 };
 
 const guessWord = (word, inputs) => {
@@ -91,6 +91,8 @@ const startGame = () => {
   filterLetters(word, inputs);
 }
 
+
+
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelector(".guess").addEventListener("click", guessLetter);
   document
@@ -98,3 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
     .addEventListener("click", startGame);
   startGame();
 });
+
+
+
+module.exports = wordPicker;
