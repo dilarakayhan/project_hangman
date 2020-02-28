@@ -40,7 +40,7 @@ const filterLetters = (word, inputs) => {
 };
 
 const showTheWord = (word, inputs) => {
-  let display = word.map(letter => inputs.includes(letter) ? letter :  "_")
+  let display = word.map(letter => inputs.includes(letter) ? letter : "_")
   document.querySelector(".the_word").innerHTML = display.join(" ");
 };
 
@@ -103,4 +103,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-module.exports = wordPicker;
+module.exports = {
+  wordPicker,
+  guessWord,
+  winTheGame,
+  loseTheGame,
+  filterLetters,
+  showTheWord
+}
