@@ -1,6 +1,8 @@
 // Initialize ALL global variables here
 // allTheWords = []
 // This code here selects a random word
+
+
 const wordList = [
   "vis",
   "toeter",
