@@ -3,8 +3,15 @@
 // This code here selects a random word
 
 
-// DIT IS EEN TEST!//
-
+const wordList = [
+  "vis",
+  "toeter",
+  "developer",
+  "telefoon",
+  "moeder",
+  "snoer",
+  "geeuw"
+];
 let maxAmount = 5;
 
 let word;
